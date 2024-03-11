@@ -1002,3 +1002,48 @@ nav img{
 
 // donation 
 
+.donation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 6%;
+    background-color: whitesmoke;
+}
+
+.donation_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    font-family: Din;
+}
+
+.donation_text h2{
+    color:rgb(3, 68, 29) ;
+}
+
+.donation_text span{
+    position: relative;
+    margin-top: 2%;
+    color: brown;
+    font-weight: bolder;
+}
+
+.donation_text a{
+    font-family: Regular;
+    font-size: small;
+    text-decoration: none;
+    position: relative;
+    margin-top: 4%;
+    color: white;
+    background-color:rgb(3, 68, 29) ;
+    border-radius: 4px;
+    width: 20%;
+    padding: 7px 7px;
+    transition: background-color 1s ease , color 1s ease;
+}
+
+.donation_text a:hover{
+    background-color: goldenrod;
+    color: black;
+}
