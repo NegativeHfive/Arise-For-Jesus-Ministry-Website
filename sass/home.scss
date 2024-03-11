@@ -1,0 +1,1004 @@
+@font-face {
+    font-family: Gotham;
+    src: url(/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(/fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(/fonts/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/fonts/Montserrat-Thin.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navigation {
+    position: absolute;
+    top: 7%;
+    display: flex;
+    justify-content: space-around; /* Distribute items along the main axis */
+    width: 100%;
+    color: white;
+    font-family: Gotham;
+    letter-spacing: 1px;
+    align-items: center;
+    font-size: smaller;
+}
+
+.donate a {
+    display: flex;
+    align-items: center;
+    border: solid 0.4px white;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    transition: background-color 0.7s ease, border 0.3s ease, color 0.3s ease; 
+}
+
+
+.donate a ion-icon{
+    margin-right: 12px;
+}
+
+.donate a:hover{
+    background-color: rgb(6, 40, 6);
+    border: none;
+    color: beige;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* This property is redundant if your nav element already has flex-direction set to row by default */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 32px;
+    transition: color 1.5s ease;
+    font-family: Monserrat;
+}
+
+nav a:hover{
+    color: rgb(6, 40, 6);
+}
+
+nav img{
+    margin-right: 32px;
+}
+
+
+
+/* Style the dropdown container */
+.dropdown-content {
+    max-height: 0; /* Initially hide the dropdown content */
+    overflow: hidden; /* Hide any overflow content */
+    position: absolute;
+    background-color: rgba(3, 68, 29, 0.838);
+    box-shadow: 0 8px 16px 0 rgba(14, 211, 93, 0.2);
+    z-index: 1;
+    transition: max-height 0.7s ease, opacity 1.3s ease; /* Smooth transition for max-height */
+    opacity: 0;
+    margin-top: 2%;
+}
+
+/* Show the dropdown content and fade it in */
+.dropdown:hover .dropdown-content {
+    max-height: 1000px; /* Expand the max-height to show content */
+    opacity: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a{
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Gotham;
+    transition: color 0.7s ease;
+    font-style: italic;
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1d7;
+    color: green;
+}
+
+/* hamburger menu */
+
+.menu-icon{
+    font-size: 34px;
+    cursor: pointer;
+    transition: color 0.7s ease;
+}
+
+.menu-icon:hover{
+    color: green;
+}
+
+.side-page {
+    position: fixed;
+    top: 17%;
+    right: -500px; /* Initially hide the side page off the screen */
+    width: 200px;
+    height: 57%;
+    background-color: rgba(3, 83, 35, 0.94);
+    transition: right 0.7s ease; /* Smooth transition for opening/closing */
+    padding: 20px;
+    color: white;
+    letter-spacing: normal;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.side-page img{
+    margin-left: 40%;
+}
+.side-page p{
+  font-family: Droid;
+  color: beige;
+}
+
+.side-page .verse{
+    font-family: Gotham;
+
+}
+
+.side-page.active {
+    right: 0; /* Show the side page by moving it to the left */
+}
+
+/* the large text csss */
+
+.large_text {
+    position: absolute;
+    margin-top: -2%;
+    top: 0px; /* Place the element at 50% from the top of the viewport */
+    left: 50%; /* Place the element at 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Translate the element back by half of its own width and height */
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    animation: rise 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes rise {
+    0% {
+        transform: translate(-50%, 100%); /* Start the animation below its original position */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        transform: translate(-50%, 50%); /* End the animation at its original position */
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+/* designing the large text */
+.large_text .welcome{
+  font-family: Droid;
+  color: gold;
+  font-size: smaller;
+  position: absolute;
+  margin-bottom: 21px;
+}
+
+.large_text h2{
+    font-family: Monserrat;
+    color: white;
+    font-size: 88px;
+}
+
+.large_text .home{
+    font-family: Gotham;
+    color: white;
+    font-size: large;
+    margin-top: -62px;
+    font-weight: bold;
+}
+
+
+.large_text button{
+    font-family: Gotham;
+    padding: 15px;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
+    margin-top: 3%;
+    border-radius: 12px;
+    border: none;
+    transition: background-color 0.7s ease, color 0.7s ease ;
+}
+
+.large_text button:hover{
+    background-color: rgba(3, 68, 29, 0.838);
+    color: beige;
+}
+
+/* scrollable mouse */
+
+.scroll-downs {
+    position: absolute;
+    top: 110%;
+    left: 49%;
+    
+    width :24px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+  // secondary nav bar pop up
+
+  .scroll-nav {
+    position: fixed;
+    top: -100px; /* Initially hide the secondary navigation bar above the viewport */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 70%;
+    background-color: rgb(3, 68, 29); /* Adjust the background color as needed */
+    z-index: 1000; /* Ensure the secondary navigation is above other content */
+    transition: top 0.3s; /* Add a smooth transition effect */
+    border-radius: 12px;
+    padding: 0.5%;
+}
+
+.secondary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust the height as needed */
+    padding: 0 20px; /* Adjust the padding as needed */
+    color: whitesmoke; /* Adjust the text color as needed */
+}
+
+.secondary-nav .img{
+    position: relative;
+    margin-left: 10%;
+}
+
+.secondary-nav a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent element */
+   display: flex;
+   justify-content: space-evenly;
+   position: relative;
+   font-family: Monserrat;
+   font-size: smaller;
+   margin-left: 2%;
+}
+
+// the ministries
+
+.ministries {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 3%;
+}
+
+.ministries .text{
+    position: relative;
+    margin-top: -32%;
+    font-size: larger;
+}
+
+.ministries .text h3{
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+    font-family: Monserrat;
+}
+
+.ministries .text p{
+    font-size: small;
+    font-family: Droid;
+    color: gold;
+    position: relative;
+    margin-bottom: -2%;
+}
+
+.ministries a{
+    text-decoration: none;
+}
+
+.ministries img{
+    filter: brightness(0.4);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.ministries img:hover{
+    filter: brightness(0.7);
+    transform: scale(1.1);
+}
+
+/* CSS code to define the animation */
+.ministries.show-animation .text {
+    animation: slide-up 0.9s ease forwards;
+}
+
+.ministries.show-animation img{
+    animation: slide-up 0.9s ease forwards;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// platforms css
+.platforms{
+    position: relative;
+    margin-top: 13%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow p{
+    font-family: Droid;
+    color:gold ;
+}
+
+.follow h2{
+    color:rgb(3, 68, 29) ;
+    font-family: Monserrat;
+    font-size: 47px;
+    position: relative;
+    margin-top: 0.5%;
+}
+
+.big_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.big_icons a{
+    text-decoration: none;
+    font-size: 100px;
+    color: rgb(3, 68, 29) ;
+}
+
+.big_icons h2{
+    font-family: Monserrat;
+    color: rgb(3, 68, 29) ;
+    position: relative;
+    margin-top: -0.6%;
+}
+
+.big_icons p{
+    font-family: droid;
+    font-size: smaller;
+}
+
+.big_icons .facebook a{
+    transition:color 0.7s ease;
+}
+
+.big_icons .facebook a:hover{
+    color: blue;
+}
+
+.big_icons .youtube a{
+    transition:color 0.7s ease;
+}
+
+.big_icons .youtube a:hover{
+    color: rgb(255, 8, 8);
+}
+
+.big_icons .zoom a{
+    transition:color 0.7s ease;
+}
+
+.big_icons .zoom a:hover{
+    color: rgb(0, 90, 246);
+}
+
+.up_icon{
+    font-size: 30px;
+    background-color: rgb(3, 68, 29);
+    padding: 6px;
+    color: gold;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    transition: color 0.7s ease;
+    border-radius: 4px;
+    margin-top: -66%;
+    margin-left: 95%;
+}
+
+.up_icon:hover{
+   color: beige;
+}
+
+.up_icon.show-animation{
+    animation: slide-up 0.7s ease forwards;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// styling of the video 
+
+.youtube_video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+    background-color: rgb(3, 68, 29);
+}
+
+.youtube_video video{
+    width: 60%;
+}
+
+.youtube_video .youtube_text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+}
+
+.youtube_p{
+  font-family: droid;
+  font-size: small;
+  color: gold;
+}
+
+.youtube_text h3{
+    font-family: Monserrat;
+    font-size: xx-large;
+    color: white;
+}
+
+.youtube_p_two{
+    font-family:regular;
+    font-weight: lighter;
+    font-size: smaller;
+    color: white;
+    letter-spacing: 1px;
+    position: relative;
+    margin-top: -1%;
+}
+
+.youtube_text h4{
+    font-family: monserrat;
+    font-size: small;
+    color: white;
+}
+
+.youtube_text .head{
+    font-size: small;
+    font-family: droid;
+    position: relative;
+    margin-top: -2%;
+    color: gold;
+}
+
+.live_event{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+    font-size: larger;
+}
+
+.live_event p{
+    font-family: droid;
+}
+
+.live_event h2{
+   font-family: Monserrat;
+   font-size: 35px;
+   color: rgb(3, 68, 29);
+}
+
+.live_event .countdown{
+    font-size: 70px;
+    font-family: droid;
+    color: rgb(3, 68, 29);
+}
+
+.time_with {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 7%;
+    background-color: burlywood;
+}
+
+
+.time_with_details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 9%;
+    font-size: larger;
+}
+
+
+.time_with_details button{
+    width: 40%;
+   font-size: 12px;
+   padding: 2%;
+   font-family: gotham;
+   background-color:rgb(3, 68, 29);
+   color: white;
+   border: none;
+   border-radius: 12px;
+   padding: 4%;
+   position: relative;
+   margin-top: 5%;
+   transition: color 1s ease, background-color 1s ease ;
+}
+
+.time_with_details button:hover{
+    color:rgb(3, 68, 29) ;
+    background-color: beige;
+}
+
+.till{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.till .location{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-right: 7%;
+    font-family: monserrat;
+}
+
+.till .location_two{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-right: 7%;
+    font-family: monserrat;
+}
+
+.till .location ion-icon,
+.till .location_two ion-icon {
+    margin-right: 5px; /* Adjust this value as needed */
+    
+}
+
+.till .location p,
+.till .location_two p {
+    margin-left: 5px; /* Adjust this value as needed */
+}
+
+
+.time_with_details .till{
+    font-family: droid;
+    font-size: smaller;
+    color:rgb(3, 68, 29);
+}
+
+.time_with_details h2{
+    font-family: monserrat;
+}
+
+.till_two{
+    font-family: regular;
+    font-size: smaller;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+// css for upcoming event 
+
+.upcoming_event{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    font-size: large;
+    margin-left: 2%;
+}
+
+.upcoming_event p{
+    font-family: droid;
+}
+
+.upcoming_event h2{
+    font-family: Monserrat;
+    position: relative;
+    margin-top: -0.4%;
+    font-size: 40px;
+    color:rgb(3, 68, 29) ;
+}
+
+// css for the events first row
+.first_row{
+    display: flex;
+    flex-direction: row ;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.first_row img{
+    width: 40%;
+    filter: brightness(0.8);
+}
+
+.first_row h2{
+    font-family: Monserrat
+}
+
+.first_row .p{
+    font-family: regular;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+.first_row a{
+    text-decoration: none;
+    font-family: monserrat;
+    font-size: smaller;
+    color: goldenrod;
+}
+
+.eerste{
+    display: flex;
+    flex-direction: row;
+}
+
+.eerste_text{
+    position: relative;
+    margin-left: 2%;
+    margin-top: 1%;
+    color:rgb(7, 122, 53) ;
+}
+
+.eerste .eerste_text .till{
+    font-size: smaller;
+}
+
+.eerste:hover img{
+    filter: brightness(1.2);
+    transition:  filter 1s ease;
+}
+
+.tweede{
+    display: flex;
+    flex-direction: row;
+}
+
+.tweede:hover img{
+    filter: brightness(1.2);
+    transition:  filter 1s ease;    
+}
+
+.tweede_text{
+    position: relative;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    color:rgb(7, 122, 53) ;
+}
+
+.tweede .tweede_text .till{
+    font-size: smaller;
+}
+
+// second row css
+.second_row{
+    display: flex;
+    flex-direction: row ;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.second_row img{
+    width: 40%;
+    filter: brightness(0.8);
+}
+
+.second_row h2{
+    font-family: monserrat;
+}
+
+.second_row .p{
+    font-family: regular;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+.second_row a{
+    text-decoration: none;
+    font-family: monserrat;
+    font-size: smaller;
+    color: goldenrod;
+}
+
+// css for toggle display
+
+.show-history,
+.show-vision,
+.show-believe {
+    display: block;
+}
+
+.text_mi.show-history,
+.text_mi.show-vision,
+.text_mi.show-believe {
+    display: none;
+}
+
+
+
+// css for menu-icon
+
+.meer_info{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: space-between;
+    font-size: medium;
+    background-color:rgb(3, 68, 29);
+    color:whitesmoke ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: background-color 1s ease;
+}
+
+.meer_info img {
+    position: absolute; /* Set the image position to absolute */
+    top: 47%; /* Adjust the top position as needed */
+    left: 68%;/* Adjust the right position as needed */
+    /* Add any other styles you require */
+}
+
+.meer_info .meer_info_p{
+    font-family: droid;
+}
+
+.meer_info h2{
+    font-size: 30px;
+    font-family: Monserrat;
+}
+
+.meer_info h4{
+    font-family: regular;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.meer_info_text h5{
+    margin-left: 2%;
+}
+
+.meer_info .history,
+.meer_info .believe,
+.meer_info .vision{
+    font-family: gotham;
+    font-weight: bolder;
+    border: solid 2px black;
+    background-color: white;
+    position: relative;
+}
+
+
+.meer_info .text_mi{
+    font-size: smaller;
+    font-family: regular;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: none;
+    margin-left: 2%;
+    overflow: hidden;
+    animation: expandContent 2s ease forwards; /* Adjust duration and timing function */
+    display: none;
+}
+
+@keyframes expandContent {
+    from { max-height: 0; opacity: 1; }
+    to { max-height: 500px; opacity: 1; }
+}
+
+.meer_info_text{
+    margin-left: 2%;
+}
+
+.meer_info .text_mi.show-text {
+    display: block;
+}
+
+
+.title_icon{
+    display: flex;
+    align-items: center;
+    transition: color 1s ease;
+}
+
+.title_icon:hover{
+    color: goldenrod;
+}
+
+.title_icon h5{
+    margin-right: 10px;
+}
+
+
+.history,
+.vision,
+.believe{
+    margin-bottom: 2%;
+    color: rgb(3, 68, 29);
+    transition: border 1.5s ease;
+}
+
+.history:hover,
+.vision:hover,
+.believe:hover{
+    border: solid 1px goldenrod;
+}
+
+// div for the main photo div
+
+.photo_div{
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.photo_div .watch{
+    font-size: larger;
+    font-family: droid;
+    color: goldenrod;
+}
+
+.photo_div h2{
+    font-family: monserrat;
+    position: relative;
+    margin-top: -1%;
+    font-size:40px;
+    color: rgb(3, 68, 29);
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    margin-top: 4%;
+    overflow: hidden; /* Hide overflow */
+    margin-left: -1%;
+}
+
+
+.photos img{
+    width: 90%;
+}
+
+.photos h4{
+    font-family: monserrat;
+    font-weight: bolder;
+}
+
+.foto {
+    flex: 0 0 30%; /* Each photo takes 30% of the space */
+    margin:0 -3%; /* Add a margin of 2% on the left and right sides of each photo */
+    margin-right: 3%;
+    margin-left: 0.12px;
+    margin-left: 1.2%;
+    animation: shuffle 30s infinite linear; /* Apply animation */
+    animation-delay: 0.5s; /* Add a delay before restarting the animation */
+}
+
+.foto h4{
+    color: rgb(3, 68, 29);
+}
+
+.foto p{
+    font-family: droid;
+    color: goldenrod;
+}
+
+@keyframes shuffle {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-600%);
+        transition-timing-function: ease-out;
+    }
+}
+
+// donation 
+
