@@ -1016,4 +1016,73 @@ nav img {
 .donation_text a:hover {
   background-color: goldenrod;
   color: black;
+}
+
+.our_leaders {
+  display: flex;
+  margin-top: 7%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+}
+
+.our_leaders .our_leaders_p {
+  font-family: droid;
+  color: goldenrod;
+}
+
+.our_leaders h1 {
+  font-family: Monserrat;
+  color: rgb(3, 68, 29);
+}
+
+.leaders img {
+  width: 80%;
+  filter: brightness(0.7);
+  transition: filter 1s ease;
+}
+
+.leaders img:hover {
+  filter: brightness(0.9);
+}
+
+.leaders {
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.leaders h2 {
+  font-family: Din;
+  color: rgb(3, 68, 29);
+}
+
+.leaders h5 {
+  font-family: droid;
+  color: goldenrod;
+}
+
+.leaders p {
+  font-family: din;
+  font-size: smaller;
+}
+
+.leaders_icon ion-icon {
+  margin-right: 4px;
+}
+
+.leaders_icon .logo_one {
+  color: rgb(19, 19, 165);
+}
+
+.leaders_icon .logo_two {
+  color: red;
+}
+
+.leaders_icon .logo_three {
+  color: green;
 }/*# sourceMappingURL=home.css.map */
