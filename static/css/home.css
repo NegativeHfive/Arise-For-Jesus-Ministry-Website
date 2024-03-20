@@ -1085,4 +1085,37 @@ nav img {
 
 .leaders_icon .logo_three {
   color: green;
+}
+
+.parallex {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-top: 8%;
+}
+
+.parallex_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.parallex_image img {
+  width: 100%;
+  height: auto;
+}
+
+.parallex_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  background-color: rgba(3, 68, 29, 0.426); /* Add background color to enhance text readability */
+  padding: 40px; /* Add padding for better presentation */
+  max-width: 80%; /* Limit the width of the text to 80% of the container */
+  font-family: Din;
+  font-size: larger;
 }/*# sourceMappingURL=home.css.map */

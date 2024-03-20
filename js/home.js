@@ -86,7 +86,7 @@ window.addEventListener('scroll', function() {
 let Event= document.querySelector("#countdown")
 
 // giving a specific dat for the event 
-const targetDate = new Date('2024-03-23T12:20:00');
+const targetDate = new Date('2024-03-28T12:20:00');
 
 // making a function to make the current live events
 function updateCountDown(){
@@ -164,4 +164,6 @@ function toggleBelieve() {
     // Toggle the target section
     believeText.classList.toggle('show-text');
 };
+
+// javascript for parallex effect
 
