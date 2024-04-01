@@ -6,7 +6,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="/static/css/home.css">
 </head>
-<body>
+<body id="body">
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -555,13 +555,123 @@
     <!--div for finding the location of airse-->
     <div class="contactus">
        <h2>Contact Us</h2>
-       <p>We are Arise For Jesus Ministry and you can find us at Amsterdam <br>
+       <p class="p">We are Arise For Jesus Ministry and you can find us at Amsterdam <br>
         Zuidoost. 1103 AC Egoli 1.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.6570828149947!2d4.956521975934!3d52.32222475085438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60bf35ba5fc7f%3A0xf50767af444d2fca!2sEgoli%201%2C%201103%20AC%20Amsterdam!5e0!3m2!1snl!2snl!4v1711617894907!5m2!1snl!2snl" 
-        width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="900" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contactus_blok">
+           
+           <div class="egoli">
+              <h3>Arise For Jesus Ministry</h3>
+              <p>For just as each of us has one body with many members, and these members do not all have the same function, 5 so in Christ we<br> t,hough many, form one body, and each member belongs to all the others.<br>
+                Romans 12:4-5</p>
+           </div>
+        </div>
     </div>
 
+    <!--the footer-->
+
+    <!--background color-->
+    <div class="background_color"></div>
+
+
+    <footer>
+        <!--div for arise-->
+        <div class="footer_1">
+
+            <img src="/images/arise-logo-150.png" alt="" width="20%">
+            <p class="welcomes">Welcome To Arise For Jesus Ministry</p>
+            <div>
+                <ion-icon name="call"></ion-icon>
+                <p>0389273888</p>
+            </div>
+            <div>
+                <ion-icon name="location"></ion-icon>
+                <p>Amsterdam Egoli1 Zuidoost</p>
+            </div>
+            <div>
+                <ion-icon name="mail"></ion-icon>
+                <p>ariseforjesusministry@gmail.com</p>
+            </div>
+
+        </div>
+
+        <!--div for contact us 2-->
+        <div class="footer_2">
+           
+            <h3>Contact Us</h3>
+           <form action="">
+               <label for="name">Name:</label><br>
+               <input type="text" id="name" placeholder="Your name"><br><br>
+
+               <label for="email">Email:</label><br>
+               <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+               <label for="message">Your Message:</label><br>
+               <textarea name="message" id="" cols="30" rows="2" placeholder="Enter Your Message"></textarea><br><br>
+               
+               <button type="button" id="send">Send</button>
+           </form>
+
+        </div>
+
+
+        <!--div for upcoming events-->
+        <div class="footer_3">
+            
+            <h3>Upcoming Events</h3>
+
+            <div>
+                <h4>Evangelism</h4>
+                <p>April 15 @ 2:00pm - 3:00pm</p>
+            </div>
+
+            <div>
+                <h4>Time With The Holy Spirit</h4>
+                <p>April 25 @ 19:30pm - 9:00pm</p>
+            </div>
+
+            <div>
+                <h4>Mother's Day</h4>
+                <p>May 12 @ 12:00pm - 15:30pm</p>
+            </div>
+
+            <div>
+                <h4>Youth Day</h4>
+                <p>May 12 @ 12:00pm - 15:30pm</p>
+            </div>
+
+        </div>
+
+        <!--div for images-->
+        <div class="footer_4">
+            <h3>Follow Us</h3>
+            <img src="/images/pictures for arise.png" alt="" width=110%" height="199px">
+            <div>
+                <a href="https://www.facebook.com/ariseforjesusministry/"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.youtube.com/@ariseforjesusministry"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#zoom"><ion-icon name="videocam-sharp"></ion-icon></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <hr id="hr">
+    <p class="copy">&copy; Made By Godrine Manu 2024</p>
+
+    <div class="pop">
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <h3>Success</h3>
+        <p>Thank you for sending your message</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="/js/home.js"></script>
+
     
 </body>
 </html>

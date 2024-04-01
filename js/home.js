@@ -1,4 +1,8 @@
 
+var script = document.createElement('script');
+script.src = "https://code.jquery.com/jquery-3.6.0.min.js"; // Check https://jquery.com/ for the current version
+document.getElementsByTagName('script')[0].appendChild(script);
+
 document.getElementById("menu-icon").addEventListener("click", function() {
     document.getElementById("side-page").classList.toggle("active");
 });
@@ -86,7 +90,7 @@ window.addEventListener('scroll', function() {
 let Event= document.querySelector("#countdown")
 
 // giving a specific dat for the event 
-const targetDate = new Date('2024-03-28T12:20:00');
+const targetDate = new Date('2024-04-25T12:20:00');
 
 // making a function to make the current live events
 function updateCountDown(){
@@ -165,5 +169,27 @@ function toggleBelieve() {
     believeText.classList.toggle('show-text');
 };
 
-// javascript for parallex effect
+//button event listener 
+
+let popUp = document.querySelector(".pop");
+
+popUp.classList.add("up")
+
+console.log(popUp)
+
+
+document.getElementById("send").addEventListener("click",function(e){
+    // printing the result out to see if it works
+    console.log("Button clicked")
+
+    // show the pop up
+    popUp.style.visibility="visible"
+    $(".pop").fadeIn(500)
+
+})
+
+document.getElementById("body").addEventListener("mouseover",e=>{
+     popUp.style.visibility="hidden"
+     $(".pop").fadeOut(900)
+})
 
