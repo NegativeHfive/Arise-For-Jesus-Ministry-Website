@@ -1,0 +1,350 @@
+@font-face {
+  font-family: Gotham;
+  src: url(/fonts/Gotham-Light.otf);
+}
+@font-face {
+  font-family: Droid;
+  src: url(/fonts/DroidSerif-Italic.ttf);
+}
+@font-face {
+  font-family: Monserrat;
+  src: url(/fonts/Montserrat-SemiBold.otf);
+}
+@font-face {
+  font-family: Regular;
+  src: url(/fonts/Montserrat-Thin.otf);
+}
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes TransIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.container {
+  animation: TransIn 0.9s;
+}
+
+.button {
+  font-size: larger;
+  font-family: Din;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  position: relative;
+  margin-top: 2%;
+  left: 46%;
+  background-color: rgb(3, 68, 29);
+  width: 5%;
+  border-radius: 4%;
+}
+
+.button a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.button ion-icon {
+  margin-left: 1%;
+  color: goldenrod;
+}
+
+.parallex {
+  margin-top: 2%;
+}
+
+.images {
+  position: static;
+  padding: 0;
+  background-attachment: fixed;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(/images/charity.png);
+  width: 100%;
+  height: 210px;
+  background-position: right;
+  background-position: bottom;
+  filter: brightness(0.5);
+}
+
+.parallex_texts {
+  display: flex;
+  text-align: center;
+  font-family: monserrat;
+  justify-content: center;
+  position: relative;
+  margin-top: -9%;
+  color: azure;
+  font-size: larger;
+}
+
+#donation_list {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+}
+
+#donation_list .where {
+  font-family: droid;
+  color: goldenrod;
+}
+
+#donation_list h1 {
+  position: relative;
+  margin-top: 0.5%;
+  font-family: Monserrat;
+  color: rgb(3, 68, 29);
+}
+
+.contributions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+}
+
+.c_1,
+.c_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+}
+
+.c_1 p,
+.c_2 p {
+  font-family: droid;
+  font-size: small;
+  color: goldenrod;
+  position: relative;
+  margin-top: 5%;
+}
+
+.c_1 h2,
+.c_2 h2 {
+  font-family: monserrat;
+  font-size: 25px;
+  position: relative;
+  margin-top: 0.7%;
+}
+
+.c_1 .b,
+.c_2 .b {
+  font-size: small;
+  position: relative;
+  margin-top: 0.4%;
+  font-family: regular;
+  font-weight: lighter;
+  color: rgb(3, 68, 29);
+}
+
+.c_1 img,
+.c_2 img {
+  filter: brightness(0.6);
+  transition: all 1s ease;
+}
+
+.c_1 img:hover,
+.c_2 img:hover {
+  filter: brightness(1);
+}
+
+.progress_bar {
+  background-color: rgb(3, 68, 29);
+  width: 50%;
+  color: aliceblue;
+  border-radius: 3px;
+  min-height: 20px; /* Adjust the minimum height as needed */
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transition for width and opacity */
+}
+
+.green_line {
+  background-color: goldenrod;
+  width: 40%;
+  min-height: 20px; /* Adjust the minimum height as needed */
+  transition: width 10s ease-in-out, opacity 10s ease-in-out; /* Transition for width and opacity */
+}
+
+.geld {
+  display: flex;
+  flex-direction: row;
+}
+
+.geld .result {
+  position: absolute;
+  margin-left: -12%;
+  margin-top: 0.9%;
+}
+
+.geld .goal {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 0.9%;
+}
+
+.background_color {
+  background-color: rgb(3, 68, 29);
+  width: 100%;
+  height: 420px;
+  z-index: -1;
+  margin-top: 5%;
+}
+
+footer {
+  position: relative;
+  margin-top: -25%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2%;
+  color: white;
+}
+
+footer .footer_1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9%;
+  font-family: regular;
+  font-size: small;
+  margin-top: 1%;
+}
+
+.footer_1 .welcomes {
+  position: relative;
+  margin-top: 10%;
+}
+
+.footer_1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.footer_1 div ion-icon {
+  margin-right: 2%;
+}
+
+.footer_1 img {
+  position: relative;
+  margin-left: 30%;
+}
+
+.footer_2 {
+  font-family: regular;
+  font-size: smaller;
+}
+
+.footer_2 h3 {
+  font-weight: bolder;
+  font-family: monserrat;
+  font-size: 20px;
+}
+
+.footer_2 button {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: monserrat;
+  background-color: bisque;
+  transition: all 1s ease;
+}
+
+.footer_2 button:hover {
+  background-color: goldenrod;
+}
+
+.footer_3 {
+  font-family: regular;
+  font-size: small;
+  position: relative;
+  margin-left: 10%;
+}
+
+.footer_3 h3 {
+  font-family: monserrat;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.footer_3 div h4 {
+  font-family: monserrat;
+}
+
+.footer_3 div p {
+  position: relative;
+  margin-top: -5%;
+  font-size: smaller;
+  font-family: droid;
+}
+
+.footer_4 {
+  position: absolute;
+  left: 75%;
+}
+
+.footer_4 h3 {
+  font-family: monserrat;
+}
+
+.footer_4 div {
+  margin-top: 2%;
+}
+
+.footer_4 div ion-icon {
+  margin-right: 5px;
+  color: wheat;
+}
+
+hr {
+  color: white;
+  height: 0.2;
+  opacity: 0.26;
+}
+
+.copy {
+  position: relative;
+  margin-top: -0.2%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: droid;
+  color: goldenrod;
+}
+
+.pop {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -39%;
+  background-color: goldenrod;
+  padding: 2%;
+  width: max-content;
+  left: 40%;
+  color: rgb(3, 68, 29);
+  border-radius: 4%;
+  border: solid rgb(3, 68, 29) 2px;
+  visibility: hidden;
+}
+
+.pop ion-icon {
+  position: relative;
+  left: 42%;
+  font-size: 50px;
+}
+
+.pop p {
+  position: relative;
+  margin-top: 0%;
+}/*# sourceMappingURL=donate.css.map */

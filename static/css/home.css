@@ -1343,4 +1343,16 @@ hr {
 .pop p {
   position: relative;
   margin-top: 0%;
+}
+
+@keyframes TransIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  animation: TransIn 0.9s;
 }/*# sourceMappingURL=home.css.map */
