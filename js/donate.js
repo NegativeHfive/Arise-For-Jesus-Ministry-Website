@@ -29,3 +29,6 @@ window.addEventListener('scroll', () =>{
         console.log("hide");
     }
 });
+
+
+
