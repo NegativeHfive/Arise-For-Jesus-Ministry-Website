@@ -1,0 +1,281 @@
+@font-face {
+  font-family: Gotham;
+  src: url(/fonts/Gotham-Light.otf);
+}
+@font-face {
+  font-family: Droid;
+  src: url(/fonts/DroidSerif-Italic.ttf);
+}
+@font-face {
+  font-family: Monserrat;
+  src: url(/fonts/Montserrat-SemiBold.otf);
+}
+@font-face {
+  font-family: Regular;
+  src: url(/fonts/Montserrat-Thin.otf);
+}
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes TransIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.container {
+  animation: TransIn 0.9s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 4%;
+  font-family: monserrat;
+  font-size: small;
+  color: rgb(3, 68, 29);
+  transition: color 0.5s ease-in-out;
+}
+
+nav a:hover {
+  color: goldenrod;
+}
+
+nav img {
+  position: absolute;
+  margin-left: -6%;
+}
+
+nav .men {
+  position: relative;
+  margin-left: 5%;
+}
+
+section {
+  margin-top: 5%;
+}
+
+.background_image {
+  background-image: url(/images/arise\ youth\ and\ shine.jpg);
+  width: 100%;
+  height: 370px;
+  background-attachment: fixed;
+  background-color: transparent;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  filter: brightness(0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.background_image:hover {
+  filter: brightness(0.6);
+}
+
+section .ministry_text {
+  position: absolute;
+  margin-top: -15%;
+  color: white;
+  font-family: monserrat;
+  font-size: xx-large;
+  left: 35%;
+}
+
+.arise_info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: monserrat;
+  margin-top: 5%;
+  color: rgb(3, 68, 29);
+}
+
+.event {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.event h1 {
+  font-family: Monserrat;
+  color: rgb(3, 68, 29);
+}
+
+.event .yoke {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.background_color {
+  background-color: rgb(3, 68, 29);
+  width: 100%;
+  height: 420px;
+  z-index: -1;
+  margin-top: 5%;
+}
+
+footer {
+  position: relative;
+  margin-top: -25%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2%;
+  color: white;
+}
+
+footer .footer_1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9%;
+  font-family: regular;
+  font-size: small;
+  margin-top: 1%;
+}
+
+.footer_1 .welcomes {
+  position: relative;
+  margin-top: 10%;
+}
+
+.footer_1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.footer_1 div ion-icon {
+  margin-right: 2%;
+}
+
+.footer_1 img {
+  position: relative;
+  margin-left: 30%;
+}
+
+.footer_2 {
+  font-family: regular;
+  font-size: smaller;
+}
+
+.footer_2 h3 {
+  font-weight: bolder;
+  font-family: monserrat;
+  font-size: 20px;
+}
+
+.footer_2 button {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: monserrat;
+  background-color: bisque;
+  transition: all 1s ease;
+}
+
+.footer_2 button:hover {
+  background-color: goldenrod;
+}
+
+.footer_3 {
+  font-family: regular;
+  font-size: small;
+  position: relative;
+  margin-left: 10%;
+}
+
+.footer_3 h3 {
+  font-family: monserrat;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.footer_3 div h4 {
+  font-family: monserrat;
+}
+
+.footer_3 div p {
+  position: relative;
+  margin-top: -5%;
+  font-size: smaller;
+  font-family: droid;
+}
+
+.footer_4 {
+  position: absolute;
+  left: 75%;
+}
+
+.footer_4 h3 {
+  font-family: monserrat;
+}
+
+.footer_4 div {
+  margin-top: 2%;
+}
+
+.footer_4 div ion-icon {
+  margin-right: 5px;
+  color: wheat;
+}
+
+hr {
+  color: white;
+  height: 0.2;
+  opacity: 0.26;
+}
+
+.copy {
+  position: relative;
+  margin-top: -0.2%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: droid;
+  color: goldenrod;
+}
+
+.pop {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -39%;
+  background-color: goldenrod;
+  padding: 2%;
+  width: max-content;
+  left: 40%;
+  color: rgb(3, 68, 29);
+  border-radius: 4%;
+  border: solid rgb(3, 68, 29) 2px;
+  visibility: hidden;
+}
+
+.pop ion-icon {
+  position: relative;
+  left: 42%;
+  font-size: 50px;
+}
+
+.pop p {
+  position: relative;
+  margin-top: 0%;
+}/*# sourceMappingURL=youth.css.map */
