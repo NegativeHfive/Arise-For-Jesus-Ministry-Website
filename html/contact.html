@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/css/contact.css">
+</head>
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <nav id="nav">
+        <a href="/html/home.html">Home</a>
+        <a href="/html/ministries.html">Ministries</a>
+        <img src="/images/arise-logo-150.png" alt="" width="60px">
+        <a href="#" class="men">News And Events</a>
+        <a href="#">About Us</a>
+    </nav>
+
+         <!--parallex section-->
+   <section>
+
+        <div class="background_image"></div>
+
+        <div class="ministry_text">
+        <h1>Contact Us</h1>
+        </div>
+
+  </section>
+
+  <div class="contact_info">
+
+
+    <div class="icons">
+
+       <div class="address">
+        <ion-icon name="paper-plane"></ion-icon>
+        <h2>Address</h2>
+        <p>PostBox 12898 1100AW, Amsterdam</p>
+       </div>
+
+       <div class="phone">
+        <ion-icon name="call"></ion-icon>
+        <h2>Telephone</h2>
+        <p>06 247 382 82 | 02 069 586 27</p>
+       </div>
+
+       <div class="email">
+        <ion-icon name="mail"></ion-icon>
+        <h2>Email</h2>
+        <p>arise4jesusministry@gmail.com</p>
+       </div>
+
+       <div>
+        <ion-icon name="location"></ion-icon>
+        <h2>Location</h2>
+        <p>EGoliplein 1, 1103 AB<br>
+            Amsterdam Zuid-Oost</p>
+       </div>
+
+    </div>
+
+    <form action="" class="contact_form">
+  
+        <form action="">
+            <label for="name">Name</label><br><br>
+            <input type="text" id="names" placeholder="Your name"><br><br><br>
+
+            <label for="email">Email</label><br><br>
+            <input type="email" id="emails" placeholder="Enter your email"><br><br><br>
+
+            <label for="message">Your Message</label><br><br>
+            <textarea name="message" id="" cols="30" rows="7" placeholder="Enter Your Message"></textarea><br><br><br>
+            
+            <button type="button" id="sent">Send</button>
+        </form>
+
+    </form>
+
+
+  </div>
+
+    <div class="pop">
+        <p>Thanks For Sending</p>
+    </div>
+
+   <!--footer-->
+
+   <!--background color-->
+   <div class="background_color"></div>
+
+
+   <footer>
+       <!--div for arise-->
+       <div class="footer_1">
+
+           <img src="/images/arise-logo-150.png" alt="" width="20%">
+           <p class="welcomes">Welcome To Arise For Jesus Ministry</p>
+           <div>
+               <ion-icon name="call"></ion-icon>
+               <p>0389273888</p>
+           </div>
+           <div>
+               <ion-icon name="location"></ion-icon>
+               <p>Amsterdam Egoli1 Zuidoost</p>
+           </div>
+           <div>
+               <ion-icon name="mail"></ion-icon>
+               <p>ariseforjesusministry@gmail.com</p>
+           </div>
+
+       </div>
+
+       <!--div for contact us 2-->
+       <div class="footer_2">
+          
+           <h3>Contact Us</h3>
+          <form action="">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" placeholder="Your name"><br><br>
+
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+              <label for="message">Your Message:</label><br>
+              <textarea name="message" id="" cols="30" rows="2" placeholder="Enter Your Message"></textarea><br><br>
+              
+              <button type="button" id="send">Send</button>
+          </form>
+
+       </div>
+
+
+       <!--div for upcoming events-->
+       <div class="footer_3">
+           
+           <h3>Upcoming Events</h3>
+
+           <div>
+               <h4>Evangelism</h4>
+               <p>April 15 @ 2:00pm - 3:00pm</p>
+           </div>
+
+           <div>
+               <h4>Time With The Holy Spirit</h4>
+               <p>April 25 @ 19:30pm - 9:00pm</p>
+           </div>
+
+           <div>
+               <h4>Mother's Day</h4>
+               <p>May 12 @ 12:00pm - 15:30pm</p>
+           </div>
+
+           <div>
+               <h4>Youth Day</h4>
+               <p>May 12 @ 12:00pm - 15:30pm</p>
+           </div>
+
+       </div>
+
+       <!--div for images-->
+       <div class="footer_4">
+           <h3>Follow Us</h3>
+           <img src="/images/pictures for arise.png" alt="" width=110%" height="199px">
+           <div>
+               <a href="https://www.facebook.com/ariseforjesusministry/"><ion-icon name="logo-facebook"></ion-icon></a>
+               <a href="https://www.youtube.com/@ariseforjesusministry"><ion-icon name="logo-youtube"></ion-icon></a>
+               <a href="#zoom"><ion-icon name="videocam-sharp"></ion-icon></a>
+           </div>
+       </div>
+
+
+   </footer>
+
+
+
+   <script>
+
+      let pop = document.querySelector(".pop");
+      // adding event listener
+      document.getElementById("sent").addEventListener('click',function(e){
+        console.log("Clicked")
+        pop.classList.add("add")
+        pop.style.visibility='visible'
+      })
+   </script>
+    
+</body>
+</html>
