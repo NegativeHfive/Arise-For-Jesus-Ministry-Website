@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Gotham;
+    src: url(/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(/fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(/fonts/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/fonts/Montserrat-Thin.otf);
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    animation: TransIn 0.7s;
+}
+
+@keyframes TransIn{
+    from{
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    to{
+       opacity: 1;
+       transform: translateY(0px);
+    }
+}
+
+
+//navigation _bar
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 4%;
+    font-family: monserrat;
+    font-size: small;
+    color: rgb(3, 68, 29);
+    transition: color 0.5s ease-in-out;
+}
+
+nav a:hover{
+    color: goldenrod;
+}
+
+nav img{
+    position: absolute;
+    margin-left: -8%;
+}
+
+nav .men{
+    position: relative;
+    margin-left: 5%;
+}
