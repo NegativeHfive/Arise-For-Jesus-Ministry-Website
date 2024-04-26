@@ -90,7 +90,7 @@ window.addEventListener('scroll', function() {
 let Event= document.querySelector("#countdown")
 
 // giving a specific dat for the event 
-const targetDate = new Date('2024-04-25T12:20:00');
+const targetDate = new Date('2024-05-28T12:20:00');
 
 // making a function to make the current live events
 function updateCountDown(){
