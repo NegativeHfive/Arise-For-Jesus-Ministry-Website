@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Gotham;
+    src: url(/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(/fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(/fonts/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/fonts/Montserrat-Thin.otf);
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    animation: TransIn 0.7s;
+}
+
+@keyframes TransIn{
+    from{
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    to{
+       opacity: 1;
+       transform: translateY(0px);
+    }
+}
