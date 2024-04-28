@@ -30,4 +30,298 @@ body {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 4%;
+  font-family: monserrat;
+  font-size: small;
+  color: rgb(3, 68, 29);
+  transition: color 0.5s ease-in-out;
+}
+
+nav a:hover {
+  color: goldenrod;
+}
+
+nav img {
+  position: absolute;
+  margin-left: -8%;
+}
+
+nav .men {
+  position: relative;
+  margin-left: 5%;
+}
+
+section {
+  margin-top: 5%;
+}
+
+.background_image {
+  background-image: url(/images/church\ news.png);
+  width: 100%;
+  height: 370px;
+  background-attachment: fixed;
+  background-color: transparent;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  filter: brightness(0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.background_image:hover {
+  filter: brightness(0.6);
+}
+
+section .ministry_text {
+  position: absolute;
+  margin-top: -15%;
+  color: white;
+  font-family: monserrat;
+  font-size: xx-large;
+  left: 35%;
+}
+
+.w_text {
+  margin-top: 5%;
+  text-align: center;
+  font-family: monserrat;
+}
+
+.month {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 1%;
+  flex-direction: row;
+  font-family: monserrat;
+  align-items: center;
+  color: rgb(3, 68, 29);
+}
+
+.month .today {
+  margin-left: 2%;
+  padding: 4px;
+  border-radius: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
+  transition: all 1s ease-in-out;
+  background-color: goldenrod;
+}
+
+.today:hover {
+  background-color: rgb(3, 68, 29);
+  color: goldenrod;
+}
+
+.month p {
+  margin-left: 2%;
+}
+
+.month ion-icon {
+  margin-left: 2%;
+}
+
+.e1_row {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.e1_row img {
+  width: 80%;
+  border-radius: 2%;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monserrat;
+  font-size: smaller;
+  color: goldenrod;
+}
+
+.events .bolder {
+  margin-top: -1px;
+  font-family: din;
+  color: rgb(3, 68, 29);
+}
+
+.e2_row {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.e2_row img {
+  width: 80%;
+  border-radius: 2%;
+}
+
+.background_color {
+  background-color: rgb(3, 68, 29);
+  width: 100%;
+  height: 420px;
+  z-index: -1;
+  margin-top: 5%;
+}
+
+footer {
+  position: relative;
+  margin-top: -25%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2%;
+  color: white;
+}
+
+footer .footer_1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9%;
+  font-family: regular;
+  font-size: small;
+  margin-top: 1%;
+}
+
+.footer_1 .welcomes {
+  position: relative;
+  margin-top: 10%;
+}
+
+.footer_1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.footer_1 div ion-icon {
+  margin-right: 2%;
+}
+
+.footer_1 img {
+  position: relative;
+  margin-left: 30%;
+}
+
+.footer_2 {
+  font-family: regular;
+  font-size: smaller;
+}
+
+.footer_2 h3 {
+  font-weight: bolder;
+  font-family: monserrat;
+  font-size: 20px;
+}
+
+.footer_2 button {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: monserrat;
+  background-color: bisque;
+  transition: all 1s ease;
+}
+
+.footer_2 button:hover {
+  background-color: goldenrod;
+}
+
+.footer_3 {
+  font-family: regular;
+  font-size: small;
+  position: relative;
+  margin-left: 10%;
+}
+
+.footer_3 h3 {
+  font-family: monserrat;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.footer_3 div h4 {
+  font-family: monserrat;
+}
+
+.footer_3 div p {
+  position: relative;
+  margin-top: -5%;
+  font-size: smaller;
+  font-family: droid;
+}
+
+.footer_4 {
+  position: absolute;
+  left: 75%;
+}
+
+.footer_4 h3 {
+  font-family: monserrat;
+}
+
+.footer_4 div {
+  margin-top: 2%;
+}
+
+.footer_4 div ion-icon {
+  margin-right: 5px;
+  color: wheat;
+}
+
+hr {
+  color: white;
+  height: 0.2;
+  opacity: 0.26;
+}
+
+.copy {
+  position: relative;
+  margin-top: -0.2%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: droid;
+  color: goldenrod;
+}
+
+.pop {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -39%;
+  background-color: goldenrod;
+  padding: 2%;
+  width: max-content;
+  left: 40%;
+  color: rgb(3, 68, 29);
+  border-radius: 4%;
+  border: solid rgb(3, 68, 29) 2px;
+  visibility: hidden;
+}
+
+.pop ion-icon {
+  position: relative;
+  left: 42%;
+  font-size: 50px;
+}
+
+.pop p {
+  position: relative;
+  margin-top: 0%;
 }/*# sourceMappingURL=news.css.map */
